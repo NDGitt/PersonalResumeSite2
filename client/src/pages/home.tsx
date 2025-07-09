@@ -182,7 +182,7 @@ export default function Home() {
       <section id="home" className="min-h-screen gradient-bg flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-          <div className="opacity-0 section-observer">
+          <div className="animate-fade-in-up">
             {/* Profile Logo */}
             <div className="w-48 h-48 mx-auto mb-8 rounded-2xl bg-white/95 backdrop-blur-sm border-4 border-white/50 flex items-center justify-center animate-float p-8">
               <img src={haasLogo} alt="Haas Logo" className="w-full h-full object-contain" />
@@ -227,13 +227,13 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="opacity-0 section-observer text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-dark-text">About Me</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="opacity-0 section-observer">
+            <div className="">
               <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-dark-text">Passionate About Innovation</h3>
               <p className="text-lg text-muted-text mb-6">
                 With over 8 years of experience in creative industries, I specialize in bridging the gap between innovative ideas and practical solutions. My approach combines strategic thinking with hands-on execution to deliver results that matter.
@@ -262,7 +262,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="opacity-0 section-observer">
+            <div className="">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-3"></div>
                 <img 
@@ -279,7 +279,7 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="opacity-0 section-observer text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-dark-text">Experience</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
           </div>
@@ -290,7 +290,7 @@ export default function Home() {
             
             <div className="space-y-12">
               {experiences.map((exp, index) => (
-                <div key={index} className="opacity-0 section-observer relative lg:pl-20">
+                <div key={index} className="relative lg:pl-20">
                   <div 
                     className={`absolute left-6 w-4 h-4 bg-${exp.color} rounded-full hidden lg:block`}
                     style={{transform: 'translateX(-50%)'}}
@@ -324,14 +324,14 @@ export default function Home() {
       {/* Education Section */}
       <section id="education" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="opacity-0 section-observer text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-dark-text">Education</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             {education.map((edu, index) => (
-              <div key={index} className="opacity-0 section-observer">
+              <div key={index} className="">
                 <Card className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 border border-primary/10 hover:shadow-lg transition-all">
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mr-4">
@@ -355,7 +355,7 @@ export default function Home() {
           </div>
           
           {/* Certifications */}
-          <div className="opacity-0 section-observer mt-16">
+          <div className="mt-16">
             <h3 className="text-2xl font-bold text-center mb-8 text-dark-text">Certifications & Achievements</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {certifications.map((cert, index) => (
@@ -374,7 +374,7 @@ export default function Home() {
       <section id="contact" className="py-20 gradient-bg relative overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="opacity-0 section-observer text-center mb-16">
+          <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-white">Let's Connect</h2>
             <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
@@ -383,7 +383,7 @@ export default function Home() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="opacity-0 section-observer">
+            <div className="">
               <Card className="glass-effect text-white p-8">
                 <h3 className="text-2xl font-bold mb-8">Get In Touch</h3>
                 
@@ -436,7 +436,7 @@ export default function Home() {
               </Card>
             </div>
             
-            <div className="opacity-0 section-observer">
+            <div className="">
               <Card className="glass-effect p-8">
                 <form className="space-y-6">
                   <div>
