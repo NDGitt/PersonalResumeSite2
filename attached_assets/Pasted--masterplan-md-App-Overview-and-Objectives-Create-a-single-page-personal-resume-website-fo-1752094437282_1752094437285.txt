@@ -1,0 +1,63 @@
+# masterplan.md
+
+## App Overview and Objectives
+
+Create a single-page personal resume website for an individual named Haas. The site will serve as an online CV that highlights key personal and professional information, presented in a creative and visually engaging format.
+
+## Target Audience
+
+Potential employers, collaborators, or anyone interested in Haas's background and experience.
+
+## Core Features and Functionality
+
+* Intro/Bio section with a short personal summary.
+* Contact information (email and personal website displayed).
+* Profile photo (placeholder initially).
+* Education history section.
+* Work experience section.
+* Social media links (placeholders).
+* Smooth scrolling between sections.
+* Subtle animations and hover effects for visual appeal.
+
+## High-Level Technical Stack Recommendations
+
+* **Frontend**: HTML, CSS, JavaScript
+* **Animations**: CSS transitions or a lightweight JavaScript animation library (e.g., AOS or GSAP)
+* **Deployment**: Replit (suitable for static site hosting)
+
+## Conceptual Data Model
+
+No backend or dynamic content — all data will be hardcoded in the HTML or a separate JS/JSON file if desired.
+
+## User Interface Design Principles
+
+* Responsive design for desktop and mobile.
+* Creative and colorful theme with modern typography.
+* Clear section separations with smooth scrolling.
+* Use of animations to enhance, not overwhelm, the content.
+
+## Security Considerations
+
+* Displayed email may be harvested by bots — consider obfuscation (e.g., replacing "@" with "\[at]") if spam becomes an issue.
+* No user authentication required.
+
+## Development Phases or Milestones
+
+1. Set up basic HTML structure with placeholder content.
+2. Apply creative, colorful CSS styling and responsive layout.
+3. Add animations and interactive effects.
+4. Test across devices (desktop, tablet, mobile).
+5. Deploy on Replit.
+
+## Potential Challenges and Solutions
+
+* **Responsive layout tuning**: Use media queries and flexible units.
+* **Design cohesion**: Choose a defined color palette and stick to it.
+* **Overuse of animations**: Keep effects subtle and purposeful.
+
+## Future Expansion Possibilities
+
+* Add a downloadable resume link (PDF).
+* Integrate a simple blog or portfolio section.
+* Include dark mode or theme toggle.
+* Add localization for multiple languages if needed.
