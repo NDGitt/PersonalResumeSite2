@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { useIsMobile } from "@/hooks/use-mobile";
+import haasLogo from "@assets/image_1752094851512.png";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -129,7 +130,10 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="font-bold text-xl text-primary">Haas</div>
+            <div className="flex items-center">
+              <img src={haasLogo} alt="Haas Logo" className="h-8 w-8 mr-2" />
+              <span className="font-bold text-xl text-primary">Haas</span>
+            </div>
             <div className="hidden md:flex space-x-8">
               {['home', 'about', 'experience', 'education', 'contact'].map((section) => (
                 <button
@@ -179,9 +183,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
           <div className="opacity-0 section-observer">
-            {/* Profile Photo Placeholder */}
-            <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center animate-float">
-              <i className="fas fa-user text-6xl text-white/70"></i>
+            {/* Profile Logo */}
+            <div className="w-48 h-48 mx-auto mb-8 rounded-2xl bg-white/95 backdrop-blur-sm border-4 border-white/50 flex items-center justify-center animate-float p-8">
+              <img src={haasLogo} alt="Haas Logo" className="w-full h-full object-contain" />
             </div>
             
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
